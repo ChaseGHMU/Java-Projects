@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="335.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cjan8cstopwatchfxml.Cjan8cStopwatchController">
+   <children>
+      <StackPane fx:id="clock" layoutX="112.0" layoutY="68.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="dialImageView" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@clockface.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="handImageView" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hand.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <HBox fx:id="buttonBox" alignment="CENTER" layoutX="112.0" layoutY="267.0" prefHeight="54.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="startBtn" mnemonicParsing="false" onAction="#start" text="Start" />
+            <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#reset" text="Reset" />
+            <Button fx:id="stopBtn" mnemonicParsing="false" onAction="#stop" text="Stop" />
+         </children>
+      </HBox>
+      <HBox fx:id="digitalTimer" alignment="CENTER" layoutX="112.0" layoutY="14.0" prefHeight="54.0" prefWidth="200.0">
+         <children>
+            <Text fx:id="digitalTimerMin" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+            <Text fx:id="digitalTimerSec" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

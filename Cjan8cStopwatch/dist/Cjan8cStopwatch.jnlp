@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Cjan8cStopwatch.jnlp">
+  <information>
+    <title>Cjan8cStopwatch</title>
+    <vendor>Chase</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Cjan8cStopwatch.jar" size="19429" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Cjan8cStopwatch" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cjan8cstopwatch.Cjan8cStopwatch"  name="Cjan8cStopwatch" />
+  <update check="always"/>
+</jnlp>
