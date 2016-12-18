@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="495.0" style="-fx-background-color: #ED1C24;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizhelper.QuestionScreenController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="28.0" prefWidth="627.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" onMenuValidation="#about" text="About" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="answer" layoutX="83.0" layoutY="201.0" prefHeight="143.0" prefWidth="370.0" style="-fx-background-color: black; -fx-font: 16px &quot;serif&quot;;" />
+      <Text layoutX="24.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #FFFFFF;" text="Question:">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text layoutX="24.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Answer:">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text layoutX="24.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Quiz Helper" wrappingWidth="198.13671875">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Button layoutX="477.0" layoutY="222.0" mnemonicParsing="false" onAction="#addtoList" prefHeight="25.0" prefWidth="112.0" text="Submit Question" />
+      <Button layoutX="477.0" layoutY="288.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="25.0" prefWidth="112.0" text="Quiz Me!" />
+      <Text layoutX="490.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Add Question">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="481.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Go To Quiz Page">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="93.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Make sure to save your file before going to quiz me!" wrappingWidth="349.13671875">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <TextArea fx:id="question" layoutX="83.0" layoutY="116.0" prefHeight="80.0" prefWidth="506.0" style="-fx-background-color: black; -fx-font: 16px &quot;Serif&quot;;;" />
+   </children>
+</AnchorPane>

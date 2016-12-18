@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="627.0" style="-fx-background-color: #ED1C24;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizhelper.AnswerScreenController">
+   <children>
+      <Text layoutX="24.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Question:" wrappingWidth="59.13671875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <MenuBar layoutY="-1.0" prefHeight="28.0" prefWidth="627.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Load" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="465.0" layoutY="201.0" mnemonicParsing="false" onAction="#startQuiz" prefHeight="25.0" prefWidth="124.0" text="Start Quiz!" />
+      <Button fx:id="answerButton" layoutX="465.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Show Answer" />
+      <TextArea fx:id="answer" layoutX="83.0" layoutY="201.0" prefHeight="143.0" prefWidth="370.0" style="-fx-background-color: black; -fx-font: 16px &quot;serif&quot;;" />
+      <Text layoutX="24.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Quiz Helper" wrappingWidth="189.2197265625">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Button layoutX="429.0" layoutY="52.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="25.0" prefWidth="160.0" text="Create New Question File" />
+      <Button fx:id="nextQuestion" layoutX="463.0" layoutY="321.0" mnemonicParsing="false" text="Go To Next Question" />
+      <Button fx:id="hideButton" layoutX="465.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Hide Answer" />
+      <TextArea fx:id="question" layoutX="83.0" layoutY="116.0" prefHeight="80.0" prefWidth="506.0" style="-fx-background-color: black; -fx-font: 16px &quot;serif&quot;;" />
+      <Text layoutX="24.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Answer:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="numQuestions" layoutX="268.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Number of Questions:" wrappingWidth="182.13671875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="questionNumber" layoutX="83.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Question Number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
